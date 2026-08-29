@@ -1,0 +1,69 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00100000000000000000001 /* SolanaInsiderWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000001 /* SolanaInsiderWatchApp.swift */; };
+		A00100000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000002 /* ContentView.swift */; };
+		A00100000000000000000003 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000003 /* Models.swift */; };
+		A00100000000000000000004 /* TokenMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000004 /* TokenMonitor.swift */; };
+		A00100000000000000000005 /* DexScreenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000005 /* DexScreenerService.swift */; };
+		A00100000000000000000006 /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000006 /* WatchlistView.swift */; };
+		A00100000000000000000007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00200000000000000000007 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00200000000000000000001 /* SolanaInsiderWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaInsiderWatchApp.swift; sourceTree = "<group>"; };
+		A00200000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A00200000000000000000003 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A00200000000000000000004 /* TokenMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenMonitor.swift; sourceTree = "<group>"; };
+		A00200000000000000000005 /* DexScreenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DexScreenerService.swift; sourceTree = "<group>"; };
+		A00200000000000000000006 /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
+		A00200000000000000000007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A00200000000000000000008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00200000000000000000009 /* SolanaInsiderWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolanaInsiderWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00300000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00400000000000000000001 = {isa = PBXGroup; children = (A00400000000000000000002 /* SolanaInsiderWatch */, A00400000000000000000003 /* Products */); sourceTree = "<group>"; };
+		A00400000000000000000002 /* SolanaInsiderWatch */ = {isa = PBXGroup; path = SolanaInsiderWatch; sourceTree = "<group>"; children = (A00200000000000000000001, A00200000000000000000002, A00200000000000000000003, A00200000000000000000004, A00200000000000000000005, A00200000000000000000006, A00200000000000000000007, A00200000000000000000008); };
+		A00400000000000000000003 /* Products */ = {isa = PBXGroup; children = (A00200000000000000000009); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00500000000000000000001 /* SolanaInsiderWatch */ = {isa = PBXNativeTarget; buildConfigurationList = A00900000000000000000002; buildPhases = (A00600000000000000000001, A00300000000000000000001, A00700000000000000000001); buildRules = (); dependencies = (); name = SolanaInsiderWatch; productName = SolanaInsiderWatch; productReference = A00200000000000000000009; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00800000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 2600; LastUpgradeCheck = 2600; TargetAttributes = {A00500000000000000000001 = {CreatedOnToolsVersion = 26.0;};};}; buildConfigurationList = A00900000000000000000001; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = A00400000000000000000001; productRefGroup = A00400000000000000000003; projectDirPath = ""; projectRoot = ""; targets = (A00500000000000000000001); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00700000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A00100000000000000000007); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00600000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00100000000000000000001, A00100000000000000000002, A00100000000000000000003, A00100000000000000000004, A00100000000000000000005, A00100000000000000000006); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A00A00000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_OPTIMIZATION_LEVEL = 0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE; ONLY_ACTIVE_ARCH = YES; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+		A00A00000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MTL_ENABLE_DEBUG_INFO = NO; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; VALIDATE_PRODUCT = YES; }; name = Release; };
+		A00A00000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = SolanaInsiderWatch/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.SolanaInsiderWatch; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		A00A00000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = SolanaInsiderWatch/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.SolanaInsiderWatch; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00900000000000000000001 /* Build configuration list for PBXProject */ = {isa = XCConfigurationList; buildConfigurations = (A00A00000000000000000001, A00A00000000000000000002); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A00900000000000000000002 /* Build configuration list for PBXNativeTarget */ = {isa = XCConfigurationList; buildConfigurations = (A00A00000000000000000003, A00A00000000000000000004); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = A00800000000000000000001 /* Project object */;
+}
