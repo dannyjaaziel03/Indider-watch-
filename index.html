@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#101114" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Insider Watch" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Solana Insider Watch</title>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="eyebrow">SOLANA SIGNAL MONITOR</div>
+      <h1>Insider Watch</h1>
+    </div>
+    <button id="refreshBtn" class="icon-btn" aria-label="Refresh">↻</button>
+  </header>
+
+  <main>
+    <section class="summary">
+      <div class="summary-card"><span>Buy Watch</span><strong id="buyCount">0</strong></div>
+      <div class="summary-card"><span>High Risk</span><strong id="riskCount">0</strong></div>
+      <div class="summary-card"><span>Updated</span><strong id="updatedAt">—</strong></div>
+    </section>
+
+    <section class="controls">
+      <label class="toggle"><input type="checkbox" id="autoRefresh" checked><span>Auto-refresh every 60s</span></label>
+      <button id="notifyBtn" class="secondary">Enable alerts</button>
+    </section>
+
+    <div id="status" class="status">Ready.</div>
+    <section id="tokenList" class="token-list" aria-live="polite"></section>
+
+    <section class="panel">
+      <h2>Watchlist</h2>
+      <div class="add-row">
+        <input id="tokenInput" placeholder="Solana token address" autocomplete="off" />
+        <button id="addBtn">Add</button>
+      </div>
+      <div id="watchlistEditor"></div>
+    </section>
+
+    <section class="panel smallprint">
+      <h2>What the score means</h2>
+      <p><b>BUY WATCH</b> means several public market signals align. <b>HIGH RISK</b> means selling, price, or liquidity risk is elevated. These are monitoring signals, not proof of insider activity or investment advice.</p>
+    </section>
+  </main>
+
+  <template id="tokenCardTemplate">
+    <article class="token-card">
+      <div class="card-top">
+        <div><h3 class="symbol">TOKEN</h3><div class="name"></div></div>
+        <span class="badge">NEUTRAL</span>
+      </div>
+      <div class="price-row"><strong class="price">—</strong><span class="change">—</span></div>
+      <div class="grid">
+        <div><span>Market cap</span><b class="mcap">—</b></div>
+        <div><span>Liquidity</span><b class="liq">—</b></div>
+        <div><span>5m buys</span><b class="buys">—</b></div>
+        <div><span>5m sells</span><b class="sells">—</b></div>
+        <div><span>5m volume</span><b class="vol">—</b></div>
+        <div><span>Score</span><b class="score">0</b></div>
+      </div>
+      <div class="reasons"></div>
+      <a class="dex-link" target="_blank" rel="noopener">Open chart ↗</a>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
